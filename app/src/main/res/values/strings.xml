@@ -5,4 +5,37 @@
     <string name="title_activity_coin_avaible">CoinAvaibleActivity</string>
     <string name="title_activity_purchase_order">PurchaseOrderActivity</string>
     <string name="item_purchase_order">Id: %1$s - Moeda: %2$s - Valor: %3$s </string>
+
+<!-- ACTIVITY LOGIN   -->
+    <string name="hint_login_user">Usuário</string>
+    <string name="hint_login_password">Senha</string>
+    <string name="button_login">Login</string>
+    <string name="text_or_register">ou faça seu cadastro</string>
+    
+<!-- ACTIVITY PURCHASE ORDER  -->
+    <string name="text_purchase_order_registration">Cadastro da ordem de Compra</string>
+    <string name="text_select_desired_coin">Selecione a moeda desejada:</string>
+    <string name="text_select_until_which_date_expect">Selecione até qual data seja esperar:</string>
+    <string name="hit_tell_what_is_ideal_amount_to_purchase">Informe qual é o valor ideal para compra</string>
+    <string name="hit_enter_quantity">Informe qual é a quantidade</string>
+    <string name="button_register_order">Cadastrar Ordem</string>
+
+<!-- ACTIVITY PURCHASE ORDER LIST -->
+    <string name="text_purchase_order_list">Lista de ordem de Compra</string>
+    <string name="button_create_new_order">Criar Nova Ordem</string>
+
+<!-- ACTIVITY REGISTER -->
+    <string name="text_make_simple_registration_start_quote">faça um simples cadastro e comece a cotar</string>
+    <string name="hint_name">Nome</string>
+    <string name="hint_cpf">CPF</string>
+    <string name="hint_rg">RG</string>
+    <string name="hint_date_birth">Data de Nascimento</string>
+    <string name="hint_nationality">Nacionalidade</string>
+    <string name="hint_federative_unit">UF</string>
+    <string name="hint_address">Endreço</string>
+    <string name="button_register">Registrar</string>
+    
+<!-- ACTIVITY COIN AVAILABLE -->
+    <string name="text_coins_available">Moedas disponíveis</string>
+
 </resources>

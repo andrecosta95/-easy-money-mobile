@@ -7,13 +7,13 @@ import com.example.easymoney.model.Coin
 import com.example.easymoney.adapter.PurchaseOrderItemAdapter
 import com.example.easymoney.R
 
-import kotlinx.android.synthetic.main.activity_coin_avaible.*
+import kotlinx.android.synthetic.main.activity_coin_available.*
 
 class CoinAvaibleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_coin_avaible)
+        setContentView(R.layout.activity_coin_available)
 
         recycler_view_coin.setHasFixedSize(true)
         recycler_view_coin.layoutManager = LinearLayoutManager (this)

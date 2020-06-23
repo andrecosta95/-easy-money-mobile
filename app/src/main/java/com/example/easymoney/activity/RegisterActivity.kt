@@ -19,7 +19,7 @@ class RegisterActivity : AppCompatActivity() {
         configView()
     }
 
-    private fun valida(field: EditText): String {
+    private fun validates(field: EditText): String {
 
         when (field.id) {
             etName.editText?.id -> {
@@ -36,11 +36,11 @@ class RegisterActivity : AppCompatActivity() {
                     return "Campo RG não pode estar vazio"
             }
 
-            etDataNascimento.editText?.id -> {
+            etDateBirth.editText?.id -> {
                 if (field.text.isNullOrEmpty())
                     return "Campo data nascimento não pode estar vazio"
             }
-            etNacionalidade.editText?.id -> {
+            etNationality.editText?.id -> {
                 if (field.text.isNullOrEmpty())
                     return "Campo nacionalidade não pode estar vazio"
             }
@@ -48,7 +48,7 @@ class RegisterActivity : AppCompatActivity() {
                 if (field.text.isNullOrEmpty())
                     return "Campo UF não pode estar vazio"
             }
-            etEndereco.editText?.id -> {
+            etAddress.editText?.id -> {
                 if (field.text.isNullOrEmpty())
                     return "Campo endereço não pode estar vazio"
             }
@@ -63,9 +63,9 @@ class RegisterActivity : AppCompatActivity() {
         listViews.add(etName.editText!!)
         listViews.add(etCPF.editText!!)
         listViews.add(etRG.editText!!)
-        listViews.add(etNacionalidade.editText!!)
+        listViews.add(etNationality.editText!!)
         listViews.add(etUF.editText!!)
-        listViews.add(etEndereco.editText!!)
+        listViews.add(etAddress.editText!!)
 
         bRegister.setOnClickListener{effectiveRegister()}
 
@@ -75,7 +75,7 @@ class RegisterActivity : AppCompatActivity() {
 
         val returnText = StringBuilder()
         for (view in listViews) {
-            if(returnText.append(valida(view)).isNotEmpty())
+            if(returnText.append(validates(view)).isNotEmpty())
                 break
         }
 

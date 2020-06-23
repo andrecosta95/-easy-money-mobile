@@ -36,7 +36,7 @@ class PurchaseOrderItemAdapter(private var listOrderItem: List<PurchaseOrder>): 
                 R.string.item_purchase_order,
                 purchaseOrder.orderId.toString(),
                 purchaseOrder.coin.name,
-                purchaseOrder.valueValorCompra.toString())
+                purchaseOrder.valueBuy.toString())
             itemView.setOnClickListener {
 
             }

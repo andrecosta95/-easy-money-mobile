@@ -12,7 +12,7 @@
             android:id="@+id/textNameApp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cadastro da ordem de Compra"
+            android:text="@string/text_purchase_order_registration"
             android:textSize="25sp"
             android:layout_marginTop="40dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -29,10 +29,10 @@
     />
 
     <TextView
-            android:id="@+id/textDescricaoMoeda"
+            android:id="@+id/textSelectDesiredCoin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selecione a moeda desejada:"
+            android:text="@string/text_select_desired_coin"
             android:layout_marginTop="40dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/guideline_0.30"
@@ -43,14 +43,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textDescricaoMoeda"
+            app:layout_constraintTop_toBottomOf="@+id/textSelectDesiredCoin"
     />
 
     <TextView
-            android:id="@+id/textDescricao"
+            android:id="@+id/textSelectDateExpect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selecione até qual data seja esperar:"
+            android:text="@string/text_select_until_which_date_expect"
             android:layout_marginTop="40dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/coin_spinner"
@@ -64,7 +64,7 @@
             android:inputType="date"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textDescricao"
+            app:layout_constraintTop_toBottomOf="@id/textSelectDateExpect"
     >
     </EditText>
 
@@ -73,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:hint="Informe qual é o valor ideal para compra"
+            android:hint="@string/hit_tell_what_is_ideal_amount_to_purchase"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/etName"
@@ -88,10 +88,10 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-            android:id="@+id/tilQtoCoin"
+            android:id="@+id/tilQtyCoin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Informe qual é a quantidade"
+            android:hint="@string/hit_enter_quantity"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tilValueCoin"
@@ -99,7 +99,7 @@
 
 
         <EditText
-                android:id="@+id/edQtoCoin"
+                android:id="@+id/edQtyCoin"
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
@@ -111,9 +111,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="Cadastrar Ordem"
+            android:text="@string/button_register_order"
             android:enabled="true"
-            app:layout_constraintTop_toBottomOf="@id/tilQtoCoin"
+            app:layout_constraintTop_toBottomOf="@id/tilQtyCoin"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
     />

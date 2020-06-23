@@ -12,10 +12,10 @@
             android:layout_height="match_parent">
 
         <TextView
-                android:id="@+id/textDescricao"
+                android:id="@+id/textSelectDateExpect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="faça um simples cadastro e comece a cotar"
+                android:text="@string/text_make_simple_registration_start_quote"
                 android:layout_marginTop="40dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -33,7 +33,7 @@
                 android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome"
+                android:hint="@string/hint_name"
                 android:layout_marginBottom="15dp"
                 app:layout_constraintTop_toTopOf="@id/guideline_0.30"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -50,7 +50,7 @@
                 android:id="@+id/etCPF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="CPF"
+                android:hint="@string/hint_cpf"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="50dp"
                 app:layout_constraintTop_toBottomOf="@id/etName"
@@ -68,7 +68,7 @@
                 android:id="@+id/etRG"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="RG"
+                android:hint="@string/hint_rg"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="50dp"
                 app:layout_constraintTop_toBottomOf="@id/etCPF"
@@ -83,10 +83,10 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-                android:id="@+id/etDataNascimento"
+                android:id="@+id/etDateBirth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Data de Nascimento"
+                android:hint="@string/hint_date_birth"
                 app:layout_constraintTop_toBottomOf="@id/etRG"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -100,13 +100,13 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-                android:id="@+id/etNacionalidade"
+                android:id="@+id/etNationality"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nacionalidade"
+                android:hint="@string/hint_nationality"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="50dp"
-                app:layout_constraintTop_toBottomOf="@id/etDataNascimento"
+                app:layout_constraintTop_toBottomOf="@id/etDateBirth"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent">
 
@@ -121,10 +121,10 @@
                 android:id="@+id/etUF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="UF"
+                android:hint="@string/hint_federative_unit"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="50dp"
-                app:layout_constraintTop_toBottomOf="@id/etNacionalidade"
+                app:layout_constraintTop_toBottomOf="@id/etNationality"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent">
 
@@ -136,10 +136,10 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-                android:id="@+id/etEndereco"
+                android:id="@+id/etAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Endereço"
+                android:hint="@string/hint_address"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="50dp"
                 app:layout_constraintTop_toBottomOf="@id/etUF"
@@ -157,8 +157,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:text="Register"
-                app:layout_constraintTop_toBottomOf="@id/etEndereco"
+                android:text="@string/button_register"
+                app:layout_constraintTop_toBottomOf="@id/etAddress"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
 

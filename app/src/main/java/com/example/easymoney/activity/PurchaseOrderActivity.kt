@@ -53,7 +53,7 @@ class PurchaseOrderActivity : AppCompatActivity() {
         btnRegisterOrder.setOnClickListener { effectiveOrder() }
 
         listViews.add(etName)
-        listViews.add(edQtoCoin)
+        listViews.add(edQtyCoin)
         listViews.add(edCoin)
 
     }
@@ -92,7 +92,7 @@ class PurchaseOrderActivity : AppCompatActivity() {
 
         etName.text.clear()
         edCoin.text.clear()
-        edQtoCoin.text.clear()
+        edQtyCoin.text.clear()
     }
 
     private fun valida(field: EditText): String {
@@ -107,7 +107,7 @@ class PurchaseOrderActivity : AppCompatActivity() {
                     return "Campo valor de compra não pode estar vazio"
             }
 
-            edQtoCoin.id -> {
+            edQtyCoin.id -> {
                 if (field.text.isNullOrEmpty())
                     return "Campo quantidade não pode estar vazio"
             }
